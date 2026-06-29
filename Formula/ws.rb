@@ -5,21 +5,21 @@
 class Ws < Formula
   desc "Witself CLI (ws)"
   homepage "https://github.com/witwave-ai/witself"
-  version "0.0.11"
+  version "0.0.12"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.11/ws_0.0.11_darwin_amd64.tar.gz"
-      sha256 "c2223797e453ea4c628abbdb6dc68806a288210b58300e6e36304c801e670aba"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.12/ws_0.0.12_darwin_amd64.tar.gz"
+      sha256 "6f7aef00b3a864de505f83f0ec986448c1cd74deef307196eb60195ed3a68b3a"
 
       define_method(:install) do
         bin.install "ws"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.11/ws_0.0.11_darwin_arm64.tar.gz"
-      sha256 "73f563e9310ef1ff9f977ba7da857c22a4ba1ad88e3e7b1f69a605487b6d1aaf"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.12/ws_0.0.12_darwin_arm64.tar.gz"
+      sha256 "d00385894655ea01278225e99e7332c4ea1380217d21f72034981089fe6e5007"
 
       define_method(:install) do
         bin.install "ws"
@@ -29,15 +29,15 @@ class Ws < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.11/ws_0.0.11_linux_amd64.tar.gz"
-      sha256 "72ec9da545013da8201bee22da01cfed5b8205d0ab3841227c3bd5d330ed6b5b"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.12/ws_0.0.12_linux_amd64.tar.gz"
+      sha256 "a072dabf1747d44947f52038f344f7a498b3b4332e05c487f9d1dbbf5f0793a5"
       define_method(:install) do
         bin.install "ws"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.11/ws_0.0.11_linux_arm64.tar.gz"
-      sha256 "545def33b85be29115d71ad56c351dd2c339e35e364a21fccf461f8d87194e04"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.12/ws_0.0.12_linux_arm64.tar.gz"
+      sha256 "a834497a625f758cf8fb6fc1e7839f1f9457d1834f63cde5d60494cc468330fa"
       define_method(:install) do
         bin.install "ws"
       end
