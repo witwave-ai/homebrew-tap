@@ -5,21 +5,21 @@
 class Ws < Formula
   desc "Witself CLI (ws)"
   homepage "https://github.com/witwave-ai/witself"
-  version "0.0.5"
+  version "0.0.6"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.5/ws_0.0.5_darwin_amd64.tar.gz"
-      sha256 "fa26bbbc0818950885f16141931df5c94118e9004e0f5acdbf70bedbb8408416"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.6/ws_0.0.6_darwin_amd64.tar.gz"
+      sha256 "8c8acf4bac63851155492fc791572884a82be0602bacb74a1ca30c9d8c278d7e"
 
       define_method(:install) do
         bin.install "ws"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.5/ws_0.0.5_darwin_arm64.tar.gz"
-      sha256 "f752a86e582d3d2d9992641d0e76b27d905fb7ae82aac936511ee210a4042da1"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.6/ws_0.0.6_darwin_arm64.tar.gz"
+      sha256 "fcdd967b9fe26d2647e8098497cbadcc2d37dd3606acdecd8769ba4df2658ac5"
 
       define_method(:install) do
         bin.install "ws"
@@ -29,15 +29,15 @@ class Ws < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.5/ws_0.0.5_linux_amd64.tar.gz"
-      sha256 "86908d01b3c973ee0c5955c638d9ab1fa39b1740774363e07aea800342cc1980"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.6/ws_0.0.6_linux_amd64.tar.gz"
+      sha256 "4fafb7fadd5d9561948b8316d39eb7d755f2c0bd79778db91472b0f0069a39ce"
       define_method(:install) do
         bin.install "ws"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.5/ws_0.0.5_linux_arm64.tar.gz"
-      sha256 "e82c1d3b9ac0e6d1b551a745db7e7ecb93c49eab606549556083a5a6dc0ca60d"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.6/ws_0.0.6_linux_arm64.tar.gz"
+      sha256 "3a3ddbf1775f7962384d48d8214536c814a07f2ba7794d742726314dcd4854ac"
       define_method(:install) do
         bin.install "ws"
       end
