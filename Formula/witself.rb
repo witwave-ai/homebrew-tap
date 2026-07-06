@@ -5,13 +5,13 @@
 class Witself < Formula
   desc "Witself CLI"
   homepage "https://github.com/witwave-ai/witself"
-  version "0.0.111"
+  version "0.0.112"
   license "FSL-1.1-ALv2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.111/witself_0.0.111_darwin_amd64.tar.gz"
-      sha256 "d6df7d21c76846b9845e03ad8fb399db359576cae58ab83ec1b5095dbc398ed7"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.112/witself_0.0.112_darwin_amd64.tar.gz"
+      sha256 "688e131584edc5a98f849d7f9e3774c9f0c2714faeb82b7fc621ade2ec064a01"
 
       define_method(:install) do
         bin.install "witself"
@@ -20,8 +20,8 @@ class Witself < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.111/witself_0.0.111_darwin_arm64.tar.gz"
-      sha256 "0f61738efb54b103660d93e95a0c0942b0fc83071807c45cced66746c698848e"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.112/witself_0.0.112_darwin_arm64.tar.gz"
+      sha256 "c1e161d6f33bb597010df8e16aa059e3c5cd1d6e3c903daa81912a90382873e3"
 
       define_method(:install) do
         bin.install "witself"
@@ -33,8 +33,8 @@ class Witself < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.111/witself_0.0.111_linux_amd64.tar.gz"
-      sha256 "f1ee46b40537e7f5680f46f8d2398c8dbfc91c599deff89d83b592d6379984c1"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.112/witself_0.0.112_linux_amd64.tar.gz"
+      sha256 "396568f0c20de2e6a0646d6e43c0e5a07a6bcd460913325ff22243d3238466f5"
       define_method(:install) do
         bin.install "witself"
         # Muscle-memory alias: `ws` keeps working forever.
@@ -42,8 +42,8 @@ class Witself < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.111/witself_0.0.111_linux_arm64.tar.gz"
-      sha256 "815aa5648dd95e95209bfbdc8cc718527c8960d75dc852d5de6f4873ec8e8bf9"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.112/witself_0.0.112_linux_arm64.tar.gz"
+      sha256 "942364f06bb720a7d1611067ed5a9fbf5dceeab1ea2d76714d5a431ae90d2e7b"
       define_method(:install) do
         bin.install "witself"
         # Muscle-memory alias: `ws` keeps working forever.
