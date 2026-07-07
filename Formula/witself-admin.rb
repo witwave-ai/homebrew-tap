@@ -5,21 +5,21 @@
 class WitselfAdmin < Formula
   desc "Witself fleet-admin CLI (talks only to the Witself control plane)"
   homepage "https://github.com/witwave-ai/witself"
-  version "0.0.115"
+  version "0.0.117"
   license "FSL-1.1-ALv2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.115/witself-admin_0.0.115_darwin_amd64.tar.gz"
-      sha256 "0e818018f0b8687625e9da85d890f324abdfecac9e188bbcd183dfbae806e4db"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.117/witself-admin_0.0.117_darwin_amd64.tar.gz"
+      sha256 "e0326b00eb344fdb91ca1183301a6bad8d34691dbf26ec3cbcab110cfc8b9456"
 
       define_method(:install) do
         bin.install "witself-admin"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.115/witself-admin_0.0.115_darwin_arm64.tar.gz"
-      sha256 "750225ac7fa5a73916bcfeab632c1c2b868fad025f2bea17c223d94f313a052f"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.117/witself-admin_0.0.117_darwin_arm64.tar.gz"
+      sha256 "8b4be12203021e7b60b9a59aba1ec888ddfa01d85ce401acf71920fe69255e04"
 
       define_method(:install) do
         bin.install "witself-admin"
@@ -29,15 +29,15 @@ class WitselfAdmin < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.115/witself-admin_0.0.115_linux_amd64.tar.gz"
-      sha256 "d4681fd669dce0f4a62e2bb0c4a3d8f1fab9a7ad21bba34964df0e731fa3f933"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.117/witself-admin_0.0.117_linux_amd64.tar.gz"
+      sha256 "f9fd837b8fb5560f434d06c6a11028887404070e937bc6acb4de696d3da6d8eb"
       define_method(:install) do
         bin.install "witself-admin"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.115/witself-admin_0.0.115_linux_arm64.tar.gz"
-      sha256 "19d31bd0f5a8940e120cd9bbff4bd32bfd855fa84d2fdf6bb306ce8d8fefcacc"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.117/witself-admin_0.0.117_linux_arm64.tar.gz"
+      sha256 "00c63965e9abe8233ee64de4606b36f24ce92b57d66331331036667a2a643429"
       define_method(:install) do
         bin.install "witself-admin"
       end
