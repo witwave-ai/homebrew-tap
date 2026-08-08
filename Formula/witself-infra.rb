@@ -2,23 +2,23 @@
 class WitselfInfra < Formula
   desc "Cell infrastructure provisioner using the Pulumi Automation API"
   homepage "https://github.com/witwave-ai/witself"
-  version "0.0.235"
+  version "0.0.236"
   license "FSL-1.1-ALv2"
 
   depends_on "pulumi"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.235/witself-infra_0.0.235_darwin_amd64.tar.gz"
-      sha256 "017a149d53e8eb04636f30235d39ecb4c8bae8f6233cc0a9f01731e23c17f4ca"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.236/witself-infra_0.0.236_darwin_amd64.tar.gz"
+      sha256 "fc081a67eee44370262b743f21ab5d4d4b46a03bb32d1120e7c1b0cb81726e84"
 
       define_method(:install) do
         bin.install "witself-infra"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.235/witself-infra_0.0.235_darwin_arm64.tar.gz"
-      sha256 "785940ad1bfe3b2a998f82f9be0ae06e996b0829645abe768915409364509488"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.236/witself-infra_0.0.236_darwin_arm64.tar.gz"
+      sha256 "2d61a1466cd6a489a4e043ca12a0c925171e8c49bca1a22f316d2aa229b65a8b"
 
       define_method(:install) do
         bin.install "witself-infra"
@@ -28,16 +28,16 @@ class WitselfInfra < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.235/witself-infra_0.0.235_linux_amd64.tar.gz"
-      sha256 "fe8438fbcd84f36be08500a0f6150c0a8bc99919f1054ed33804e30aee287beb"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.236/witself-infra_0.0.236_linux_amd64.tar.gz"
+      sha256 "cd17aeefb03aa2f5139091eab7d1c886265ca1529df888e20b78a7d4e781cc8b"
 
       define_method(:install) do
         bin.install "witself-infra"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.235/witself-infra_0.0.235_linux_arm64.tar.gz"
-      sha256 "b7bbee164940a403ba46a21b8e99e15d8717c2f1cbbbfe72a3035879d64c5faa"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.236/witself-infra_0.0.236_linux_arm64.tar.gz"
+      sha256 "b57454283a3e8c00f1079f383b66fd5318cb50befa74d15e1d8fdbd1be41504d"
 
       define_method(:install) do
         bin.install "witself-infra"
