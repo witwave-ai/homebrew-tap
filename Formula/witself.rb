@@ -2,13 +2,13 @@
 class Witself < Formula
   desc "Identity, memory, messaging, and secrets CLI for autonomous AI agents"
   homepage "https://github.com/witwave-ai/witself"
-  version "0.0.271"
+  version "0.0.272"
   license "FSL-1.1-ALv2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.271/witself_0.0.271_darwin_amd64.tar.gz"
-      sha256 "4cc77e504a3b28841780dede29832cf1f13d0986e8468ee5dbbf8e4b213f55eb"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.272/witself_0.0.272_darwin_amd64.tar.gz"
+      sha256 "ba38c96e03a7c7f99a7f746260543a11a5607dc540fd6c6912bbaf79e0a40ebd"
 
       define_method(:install) do
         bin.install "witself"
@@ -16,8 +16,8 @@ class Witself < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.271/witself_0.0.271_darwin_arm64.tar.gz"
-      sha256 "ccd5dc275cfe11b254a60ffcc6fafa99169f82185f75b3584b77a5b2d7508cef"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.272/witself_0.0.272_darwin_arm64.tar.gz"
+      sha256 "fab7429e450a75a9a3c5f0049fd7e1f086933bfc9f860ff4cf577924d4e624ab"
 
       define_method(:install) do
         bin.install "witself"
@@ -28,8 +28,8 @@ class Witself < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.271/witself_0.0.271_linux_amd64.tar.gz"
-      sha256 "0f1626b33c85418e827bea8926d7351edb4831126ddcf1c3f306d69282bf2c86"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.272/witself_0.0.272_linux_amd64.tar.gz"
+      sha256 "5bb5e07b3cded762f7fb212b20996bce6107c1d72a7366c0e1a97d423317048c"
 
       define_method(:install) do
         bin.install "witself"
@@ -37,8 +37,8 @@ class Witself < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/witwave-ai/witself/releases/download/v0.0.271/witself_0.0.271_linux_arm64.tar.gz"
-      sha256 "a31741ddf2ac4743e04b0d70d5d0d3716cd98b681c49c840dde52a3e276b7ae6"
+      url "https://github.com/witwave-ai/witself/releases/download/v0.0.272/witself_0.0.272_linux_arm64.tar.gz"
+      sha256 "5951614a15d7962001d8288252473a5be0f3a8bc9dc8941a0ea5ead5da3d13ac"
 
       define_method(:install) do
         bin.install "witself"
